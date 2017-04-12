@@ -1,9 +1,8 @@
-
 <?php
 
 /*
 
-echos of date: gjgjggjggjjgjgjgjgjgjgjgjjg
+echos of date:
 d - The day of the month (from 01 to 31)
 D - A textual representation of a day (three letters)
 j - The day of the month without leading zeros (1 to 31)
@@ -66,33 +65,39 @@ $time_night = array(00, 06);
 	<link rel="stylesheet" type="text/css" href="goedecss.css">
 </head>
 <body>
-    <div >
-     	
 
-    </div>
+<div>
+<?php
+  if ($today >= $time_morning[0] && $today < $time_morning[1]) {
 
-    <div>
-    	<?php
-    	  if ($today >= $time_morning[0] && $today < $time_morning[1]) {
-    	   	    echo "<h1>$morning</h1>";
-     	        echo "<h2>The time is " . "$today</h2>";
-                echo '<img src="..\php\backgrounds\morning.png" alt="morning" width="100%" height="100%">';
-    	   } elseif ($today >= $time_afternoon[0] && $today < $time_afternoon[1]) {
-    	   	    echo "<h1>$afternoon</h1>";
-    	   	    echo "<h2>The time is " . "$today</h2>";
-                echo '<img src="..\php\backgrounds\afternoon.png" alt="afternoon" width="100%" height="100%">';
-    	   } elseif ($today >= $time_evening[0] && $today < $time_evening[1]) {
-    	   	    echo "<h1>$evening</h1>";
-    	   	    echo "<h2>The time is " . "$today</h2>";
-                echo '<img src="..\php\backgrounds\evening.png" alt="evening" width="100%" height="100%">';
-    	   } elseif ($today >= $time_night[0] && $today < $time_night[1]) {
-    	   	    echo "<h1>$night</h1>";
-    	   	    echo "<h2>The time is " . "$today</h2>";
-                echo '<img src="..\php\backgrounds\night.png" alt="night" width="100%" height="100%">';
-    	   } else {
-    	   	    echo "Your code has an error... #FixItJesus!";
-    	   }
-    	?>
-    </div>
+   	    echo "<h1>$morning</h1>";
+	    echo "<h2>The time is " . "$today</h2>";
+        echo '<img src="..\php\backgrounds\morning.png" alt="morning" width="100%" height="100%">';
+
+   } elseif ($today >= $time_afternoon[0] && $today < $time_afternoon[1]) {
+
+   	    echo "<h1>$afternoon</h1>";
+   	    echo "<h2>The time is " . "$today</h2>";
+        echo '<img src="..\php\backgrounds\afternoon.png" alt="afternoon" width="100%" height="100%">';
+
+   } elseif ($today >= $time_evening[0] && $today < $time_evening[1]) {
+
+   	    echo "<h1>$evening</h1>";
+   	    echo "<h2>The time is " . "$today</h2>";
+        echo '<img src="..\php\backgrounds\evening.png" alt="evening" width="100%" height="100%">';
+
+   } elseif ($today >= $time_night[0] && $today < $time_night[1]) {
+
+   	    echo "<h1>$night</h1>";
+   	    echo "<h2>The time is " . "$today</h2>";
+        echo '<img src="..\php\backgrounds\night.png" alt="night" width="100%" height="100%">';
+
+   } else {
+
+   	    echo "Your code has an error... #FixItJesus!";
+
+   }
+?>
+</div>
 </body>
 </html>
