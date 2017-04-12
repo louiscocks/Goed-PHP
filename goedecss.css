@@ -1,0 +1,18 @@
+body {
+	font-family: arial, sans-serif;
+}
+
+
+h2 {
+	position: fixed;
+	top: 70%;
+	left: 0;
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+	position: fixed;
+	top: 50%;
+	left: 43%;
+}
