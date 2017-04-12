@@ -3,7 +3,7 @@
 
 /*
 
-echos of date:
+echos of date: gjgjggjggjjgjgjgjgjgjgjgjjg
 d - The day of the month (from 01 to 31)
 D - A textual representation of a day (three letters)
 j - The day of the month without leading zeros (1 to 31)
